@@ -26,3 +26,41 @@ body {
 .legend{
   font-size: 0.75rem;
 }
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 18px;
+  background-color: white;
+}
+.nav{
+  color: black;
+  box-shadow: 0 0 1px 0 #c7c7c7;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.h1{
+  font-size: 36px;
+  padding: 10px 0 10px 20px;
+}
+.span{
+  font-weight: 100;
+}
+.row{
+  display: flex;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #c7c7c7;
+  height: 24px;
+}
+.day{
+  flex: 1;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.light{
+  color: #8e8e8e;
+}
