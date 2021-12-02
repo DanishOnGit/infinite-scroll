@@ -15,6 +15,7 @@ export const MONTHS = [
   "October",
   "November",
   "December",
+  "January"
 ];
  export const DAYSINWEEK=7;
  export const MONTHSINYEAR=12;

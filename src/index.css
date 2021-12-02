@@ -1,15 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,13 +20,13 @@ body {
 .off {
   color: #d5d5d5;
 }
-.date{
+.date {
   color: #646464;
 }
-.legend{
+.legend {
   font-size: 0.75rem;
 }
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -35,32 +35,86 @@ body {
   font-size: 18px;
   background-color: white;
 }
-.nav{
+.nav {
   color: black;
   box-shadow: 0 0 1px 0 #c7c7c7;
   position: fixed;
   width: 100%;
   background-color: white;
 }
-.h1{
+.h1 {
   font-size: 36px;
   padding: 10px 0 10px 20px;
 }
-.span{
+.span {
   font-weight: 100;
 }
-.row{
+.row {
   display: flex;
   padding-bottom: 2rem;
   border-bottom: 1px solid #c7c7c7;
   height: 24px;
 }
-.day{
+.day {
   flex: 1;
   padding-right: 10px;
   display: flex;
   justify-content: flex-end;
 }
-.light{
+.light {
   color: #8e8e8e;
 }
+.wrapper {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  overflow: scroll;
+  height: calc(100vh - 86px);
+  scroll-snap-type: proximity;
+  scroll-snap-type: y proximity;
+}
+.months {
+  scroll-snap-align: start;
+  color: #e6e5e6;
+}
+.months .week {
+  display: flex;
+  scroll-snap-align: start;
+}
+.months .week .date {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100px;
+  border-right: 1px solid #e6e5e6;
+  border-bottom: 1px solid #e6e5e6;
+  padding: 0.5rem 0.5rem 0 0;
+}
+.months .week .date:last-child {
+  border-right: 0;
+}
+.date-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+.date-box .text {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .sunday{
+  background-color: grey;
+} */
+/* .active{
+  background-color: red;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
